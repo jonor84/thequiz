@@ -66,7 +66,7 @@ export const Quiz = () => {
           </div>
         </div>
         <div className="unit">
-          <h3></h3>Vilket är världens största ocean?
+          <h3>Vilket är världens största ocean?</h3>
           <div className="answers">
             <input type="radio" name="q4" onChange={handleChange2} />{" "}
             <p>a Indiska oceanen</p>
