@@ -4,10 +4,16 @@ import "../styles/quiz.css";
 export const Quiz = () => {
   const [points, setPoints] = useState(0);
   const [show, setShow] = useState(false);
+  
+const randomColor = () : string => {
+        return '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0');
+}
 
   const handleChange = () => {
     setPoints(points + 1);
+    document.body.style.backgroundColor = randomColor();
   };
+  
 
   const handleClick = () => {
     setShow(true);
